@@ -37,7 +37,41 @@ $(function() {
   }
 
 
+  var num1 = 6;
+  var num2 = 8;
 
+  var arrowStartX = 10.5;
+  var controlX = 0;
+  var controlY = 0;
+  var path = 0;
+  drawArrow(num1);
+  firstNumberInput.css('top', (controlY + 10) + 'px');
+  firstNumberInput.css('left', (controlX - 7) + 'px');
+  drawArrow(num2);
+  secondNumberInput.css('top',  (controlY - 10) + 'px');
+  secondNumberInput.css('left', (controlX - 7) + 'px');
+
+
+
+
+  function drawArrow(number) {
+    // Draw arrow
+    var arrowStartY = y + 10;
+    path = number * 30;
+    controlX = arrowStartX + path / 2;
+    controlY = arrowStartY - path * 0.5;
+
+    ctx.beginPath();
+    ctx.moveTo(arrowStartX, arrowStartY);
+    ctx.quadraticCurveTo(controlX, controlY, arrowStartX + path, arrowStartY);
+    ctx.moveTo(arrowStartX + path - 5, arrowStartY - 10);
+    ctx.lineTo(arrowStartX + path, arrowStartY);
+    ctx.lineTo(arrowStartX + path - 10, arrowStartY - 5);
+    ctx.strokeStyle = '#6F3177';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    arrowStartX += number * 30;
+  }
 
 
 
