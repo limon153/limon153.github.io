@@ -1,0 +1,36 @@
+html {
+  font-size: 36px;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+.exercise {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.canvas {
+  position: relative;
+  width: 650px;
+  height: 200px;
+}
+
+.number-input {
+  position: absolute;
+  width: 12px;
+}
+
+#axis {
+  display: none;
+}
+
+#arrow {
+  display: none;
+}
