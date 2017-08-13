@@ -10,14 +10,17 @@
   <body>
 
     <div class="container">
-      <h1 class="exercise"><span id="first-number">7</span> + <span id="second-number">3</span> = <span id="result">?</span></h1>
+      <div class="exercise">
+        <h1 class="exercise-text"><span id="first-number"></span> + <span id="second-number"></span> = <span id="result">?</span></h1>
+        <form id="result-form"><input id="result-input" class="number-input hidden" type="text" autocomplete="off" maxlength="2"></form>
+      </div>
       <div class="canvas">
-        <input class="number-input" id="first-number-input" type="text" >
-        <input class="number-input" id="second-number-input" type="text" >
+        <span class="number-input first-number-input"></span>
+        <input class="number-input first-number-input" type="text" autocomplete="off" maxlength="1">
+        <span class="number-input second-number-input"></span>
+        <input class="number-input second-number-input hidden" type="text" autocomplete="off" maxlength="1">
         <canvas id="canvas" width="650" height="200"></canvas>
       </div>
-      <img src="assets/sprite.png" id="axis">
-      <img src="assets/arrow.png" id="arrow">
     </div>
 
 

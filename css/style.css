@@ -7,13 +7,34 @@ html {
   margin: auto;
 }
 
-canvas {
-  border: 1px solid black;
+.exercise span {
+  border-radius: 3px;
+  padding: 1px;
 }
 
 .exercise {
+  /*display: inline;*/
   margin-top: 20px;
   text-align: center;
+}
+
+.exercise-text {
+  display: inline;
+}
+
+.exercise form {
+  display: inline;
+}
+
+.number-input {
+  font-size: 0.7rem;
+  position: absolute;
+  width: 20px;
+}
+
+.exercise input {
+  margin-left: 10px;
+  width: 30px;
 }
 
 .canvas {
@@ -22,15 +43,6 @@ canvas {
   height: 200px;
 }
 
-.number-input {
-  position: absolute;
-  width: 12px;
-}
-
-#axis {
-  display: none;
-}
-
-#arrow {
+.hidden {
   display: none;
 }
