@@ -37,9 +37,9 @@ $(function() {
   }
 
 
-  var num1 = 9;
-  var num2 = 6;
-  var result = num1 + num2;
+  var num1 = Math.floor(Math.random()*4 + 6);
+  var result = Math.floor(Math.random()*4 + 11);
+  var num2 = result - num1;
   $('#first-number').text(num1);
   $('#second-number').text(num2);
 
